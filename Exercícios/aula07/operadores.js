@@ -1,0 +1,12 @@
+var a = 5 + 3
+console.log('a = ' + a)
+var b = a % 5
+console.log('b = ' + b)
+var c = 5 * b ** 2
+console.log('c = ' + c)
+var d = 10 - a / 2
+console.log('d = ' + d)
+var e = 6 * 2 / d
+console.log('e = ' + e)
+var f = b % e + 4 / e
+console.log('f = ' + f)
