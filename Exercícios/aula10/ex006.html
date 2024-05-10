@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 009 - JS | DOM Events</title>
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: aquamarine;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center; 
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        <strong>Interaja...</strong>
+    </div>
+    <script>
+        var area = window.document.getElementById('area');
+        area.addEventListener('click', clicar);
+        area.addEventListener('mouseenter', entrar);
+        area.addEventListener('mouseout', sair);
+
+        function clicar() {
+            area.innerText = ('Clicou!');
+            area.style.background = 'black';
+        }
+        function entrar() {
+            area.innerText = ('Entrou!');
+            area.style.background = 'aquamarine'
+        }
+        function sair() {
+            area.innerText = ('Saiu!');
+            area.style.background = 'Red';
+        }
+    </script>
+</body>
+</html>
