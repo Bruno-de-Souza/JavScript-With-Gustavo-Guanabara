@@ -9,7 +9,7 @@ function carregar() {
         //Bom dia
         img.src = '/Exercícios/aula13/foto-manhã.jpg'
         document.body.style.background = '#85A0B0';
-    } else if (horaAtual >= 12 && horaAtual <= 18) {
+    } else if (horaAtual >= 12 && horaAtual < 18) {
         //Boa tarde
         img.src = '/Exercícios/aula13/foto-tarde.jpg'
         document.body.style.background = '#35738E';
