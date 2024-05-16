@@ -15,31 +15,35 @@ function verificar() {
             genero = 'Homem';
             if (idade >= 0  && idade < 10) {
                 //criança
-                img.setAttribute('src', '/c:/Users/bruno/OneDrive/Documentos/Developer Files/JavScript-With-Gustavo-Guanabara/Exercícios/aula14/bebe-masculino.jpg');
+                img.setAttribute('src', 'bebe-masculino.jpg');
             } else if (idade < 21) {
                 //jovem
-                img.setAttribute('src', '/c:/Users/bruno/OneDrive/Documentos/Developer Files/JavScript-With-Gustavo-Guanabara/Exercícios/aula14/jovem-masculino.jpg');
+                img.setAttribute('src', 'homem-jovem.jpg');
             } else if (idade < 50) {
                 //adulto
-                img.setAttribute('src', '/c:/Users/bruno/OneDrive/Documentos/Developer Files/JavScript-With-Gustavo-Guanabara/Exercícios/aula14/adulto-masculino.jpg');
+                img.setAttribute('src', 'homem-adulto.jpg');
             } else {
                 //idoso
-                img.setAttribute('src', '/c:/Users/bruno/OneDrive/Documentos/Developer Files/JavScript-With-Gustavo-Guanabara/Exercícios/aula14/idoso-masculino.jpg');
+                img.setAttribute('src', 'homem-idoso.jpg');
             }
         } else if (sexo[1].checked) {
             genero = 'Mulher';
             if (idade >= 0  && idade < 10) {
                 //criança
+                img.setAttribute('src', 'bebe-feminino.jpg');
             } else if (idade < 21) {
                 //jovem
+                img.setAttribute('src', 'mulher-jovem.jpg');
             } else if (idade < 50) {
                 //adulto
+                img.setAttribute('src', 'mulher-adulta.jpg');
             } else {
                 //idoso
+                img.setAttribute('src', 'mulher-idosa.jpg');
             }
         }
         res.style.textAlign = 'center';
-        img.innerHTML = `Detectamos ${genero} com ${idade} anos!`;
+        res.innerHTML = `Detectamos ${genero} com ${idade} anos!`;
         res.appendChild(img);
     }
 }
