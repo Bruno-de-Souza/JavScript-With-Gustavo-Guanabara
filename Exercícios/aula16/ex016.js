@@ -7,9 +7,8 @@ function contar() {
         res.innerHTML = `Impossível contar!`;
     } else { 
         var total = 0;
-        for (var i = Number(txtIn.value); i <= Number(txtFim.value); i += Number(txtPasso.value)) {
-            total += i;
+        for (var i = Number(txtIn.value); i <= Number(txtFim.value); i += Number(txtPasso.value)){
+            total += `${i}`;      
         }
-        res.innerHTML = `Contando: `;
     }
 }
