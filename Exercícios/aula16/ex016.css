@@ -1,0 +1,35 @@
+body {
+    background:  rgba(10, 59, 221, 0.753);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 35px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.322);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+#txtIn, #txtFim, #txtPasso, #txtContar {
+    margin-bottom: 10px;
+}
+
+input[type=number] {
+    width: 50%;
+    
+    margin: 8px 0;
+    box-sizing: border-box;
+}
