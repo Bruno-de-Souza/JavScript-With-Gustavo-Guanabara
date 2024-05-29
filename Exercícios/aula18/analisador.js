@@ -1,16 +1,25 @@
 function add() {
-    let num = window.document.getElementById('num');
+    let num = window.document.getElementById('num').value;
     let res = window.document.getElementById('res');
-    let values = [];
+    let values = new Array(100);
+    let index = 0;
+    let resp = '';
     let n = Number(num.value);
     if (n == null || n == '' || n <= 0) {
         window.alert('[ERRO] Valor inválido!');
     } else {
-        res.innerHTML = '';
-        for (let i = 0; i <= n; i++) {
+        if (index < values.length) {
+            values[index] = num;
+            index++;
+            document.getElementById('res').num = '';
+        } else {
+            window.alert('Limite de valores atingidos!');
+        }
+        for (let i = 0; i < index; i++) {
+            resp += values[i];
             let node = document.createElement('option');
-            node.text += `O número ${i} foi adicionado!`;
-            res.appendChild(node); 
+            node.text = `Valor ${resp} foi adicionado!`;
+            res.appendChild(node);
         }
     }
 }
