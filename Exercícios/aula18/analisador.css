@@ -5,7 +5,7 @@ body {
 header {
     text-align: center;
     color: white;
-    font: normal 30pt arual;
+    font: normal 30pt arial;
 }
 section {
     text-align: left;
@@ -15,10 +15,12 @@ section {
     width: 550px;
     margin: auto;
     box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.522);
-    margin-bottom: 10px;
 }
 footer {
     text-align: center;
     color: white;
     font: normal 17pt arial;
+}
+select#res {
+    width: 300px;
 }
