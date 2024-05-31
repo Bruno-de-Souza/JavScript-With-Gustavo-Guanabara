@@ -52,7 +52,7 @@ function finalizar() {
         //Varifica os valores da lista após finalizar
         for (let pos in valores) {
             soma += valores[pos];
-            media = valores[pos] / 2;
+            //media = valores[pos] / 2;
             if (valores[pos] > maior) {
                 maior = valores[pos];
             }
@@ -60,6 +60,7 @@ function finalizar() {
                 menor = valores[pos];
             }
         }
+        media = soma / total;
         resII.innerHTML = '';
         resII.innerHTML += `<p>Números cadastrados: ${total}.<p/>`;
         resII.innerHTML += `<p>Maior número informado: ${maior}.<p/>`;
