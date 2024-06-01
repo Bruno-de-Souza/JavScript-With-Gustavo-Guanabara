@@ -21,13 +21,13 @@ function inLista(n, lis) {
 
 function adicionar() {
     if (isNumeroValido(num.value) && !inLista(num.value, values)) {
-        values.push(Number(num.value));1
+        values.push(Number(num.value)); 1
         console.log(`Valores: ${values}!`);
         let node = document.createElement('option');
         node.text = `Valor ${num.value} foi adicionado na lista!`;
         list.appendChild(node);
         res.innerHTML = '';
-    } 
+    }
     else {
         window.alert('Valor inválido ou já encontrado na lista!');
     }
@@ -44,8 +44,14 @@ function finalizar() {
         let menor = values[0];
         let soma = 0;
         let media = 0;
-        let par =  '';
-        let impar = '';
+        let par = Number(num.value);
+        let impar = Number(num.value);
+
+        if (Number(num.value) % 2 == 0) {
+            par += Number(num.value);
+        } else {
+            impar += Number(num.value);
+        }
 
         for (let posicao in values) {
             soma += values[posicao];
@@ -57,8 +63,6 @@ function finalizar() {
             }
         }
         media = soma / total;
-        par = total.length % 2 == 0;
-        impar = total.length % 2 != 0;
         res.innerHTML = '';
         res.innerHTML += `<p>Total de números cadastrados: ${total}</p>`;
         res.innerHTML += `<p>O maior número cadastrado é: ${maior}<p/>`;
@@ -68,4 +72,3 @@ function finalizar() {
         res.innerHTML += `<p>Total de números pares é: ${par}<p/>`;
     }
 }
-
