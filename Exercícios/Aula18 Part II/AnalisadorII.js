@@ -44,14 +44,8 @@ function finalizar() {
         let menor = values[0];
         let soma = 0;
         let media = 0;
-        let par = Number(num.value);
-        let impar = Number(num.value);
-
-        if (Number(num.value) % 2 == 0) {
-            par += Number(num.value);
-        } else {
-            impar += Number(num.value);
-        }
+        let par = values.indexOf()
+        let impar = values.indexOf();
 
         for (let posicao in values) {
             soma += values[posicao];
@@ -62,6 +56,12 @@ function finalizar() {
                 menor = values[posicao];
             }
         }
+
+        for (let numero in values) {
+            if (values[numero] % 2 == 0)
+                par = values.indexOf(numero);
+        }
+        
         media = soma / total;
         res.innerHTML = '';
         res.innerHTML += `<p>Total de números cadastrados: ${total}</p>`;
