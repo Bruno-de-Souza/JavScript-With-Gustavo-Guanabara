@@ -1,0 +1,32 @@
+body {
+    background: rgba(0, 0, 255, 0.471);
+    font-size: 17pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+header {
+    text-align: center;
+    font: normal 15pt arial;
+    color: azure;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.577);
+    width: 500px;
+    text-align: left;
+    margin: auto;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 5px 15px 5px rgb(0, 0, 0, 0.255);
+}
+
+footer {
+    text-align: center;
+    color: azure;
+    font: normal 15pt arial;
+}
+
+select {
+    width: 300px;
+}
