@@ -8,5 +8,6 @@ let amigo = {
         this.peso += p;
     }
 };
+console.log('Peso: ' + amigo.peso);
 amigo.engodar(5);
 console.log(`O ${amigo.nome} pesa ${amigo.peso}`);
